@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>life C-19</title>
+    <meta charset="utf-8">
+
+    <link href="css/tela.css" rel="stylesheet">
+
+    <link rel="sortcut icon" href="img1.jpeg" type="img/img1.jpeg" />
+
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Inicio <target="blank"></target></a></li>
+            <li><a href="telacovid.html">COVID-19</a></li>
+            <li><a href="telapubli.html">Publicar<target="blank"></target> </a>
+                <li><a href="telasobre.html">Sobre<target="blank"></target> </a>
+                </li>
+        </ul>
+    </div>
+    <h1> Publique sua história:</h1>
+
+    <div class="public">
+        <form onsubmit="return enviar();" id="contatoForm" method="post" action="lifecovid19@outlook.com" target="_blank">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder=" Joao Silva Santos">
+            </div>
+            <div>
+                <label for="data">Data de Nascimento</label>
+                <input type="date" name="data" id="data">
+            </div>
+            <div>
+                <p>Sexo:
+                    <label><input type="radio" name="sexo" value="M" id="masc" /> Masculino</label>
+                    <label><input type="radio" name="sexo" value="F" id="masc" /> Feminino</label>
+            </div>
+            <div>
+                <label for="phone">Celular</label>
+                <input type="text" name="phone" id="phone" placeholder="(DD) 9800-1771">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+            </div>
+            Conte nesta caixa de texto um resumo de sua história: como foi os sintomas, o tempo que ficou internado ou afastado e diga como foi a recuperação.
+            <textarea rows="10" cols="80" maxlength="5000" name="historia"></textarea>
+            <p>
+                <input type="file" id="arquivos">
+            </p>
+            <input type="checkbox" id="aceite" value="aceite">Li e aceito o <a href="Termo_Aceite.pdf">Termo!</a>
+    </div>
+    <div class="save">
+        <a type="submit" value="Enviar" href="mailto:lifecovid19@outlook.com?subject=Hello%20again">Enviar</a>
+    </div>
+    </form>
+
+    <div id="Menu2">
+        <ul>
+            <li>
+                <a>
+                    <p style="font: size 15px;">Para suporte entre em contato e-mail: lifecovid19@outlook.com</p>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="js/tela.js"></script>
+
+</body>
+
+</html>
